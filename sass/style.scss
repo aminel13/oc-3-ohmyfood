@@ -5,6 +5,7 @@
 }
 
 @import "./fonts";
+@import "./composants/boutton";
 
 img {
     display: block;
@@ -39,6 +40,16 @@ a {
     padding: 15px;
     box-shadow: inset 0px 7px 5px -4px rgba($color: #000000, $alpha: 0.2);
 
+}
+
+.reservation {
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    padding-block: 45px;
+
+    h2 {
+        margin-bottom: 10px;
+    }
 }
 
 .container {
