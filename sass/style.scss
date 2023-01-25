@@ -7,6 +7,14 @@
 @import "./fonts";
 @import "./composants/boutton";
 
+h1 {
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -32,6 +40,17 @@ a {
         width: 100%;
         height: 175px;
     }
+
+    .carte-content {
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            margin-bottom: 3px;
+        }
+    }
 }
 
 .location {
@@ -52,6 +71,59 @@ a {
     }
 }
 
+.fonctionnement {
+    padding: 20px;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        width: 330px;
+        height: 75px;
+        margin-block: 10px;
+
+        box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
+        border-radius: 27px;
+        margin-bottom: 30px;
+        background-color: rgb(247, 247, 247);
+        padding-block: 27px;
+
+        .numero {
+            background-color: rgb(147, 86, 220);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 2px 7px;
+            margin-left: -12px;
+        }
+
+        i {
+            color: rgb(126, 126, 126);
+            margin-inline: 25px;
+            font-size: 20px;
+            transition: color 2s ease-in-out;
+        }
+
+        transition: background-color 2s ease-in-out;
+
+        &:hover {
+            background-color: rgb(245, 237, 255);
+
+            i {
+                color: rgb(147, 86, 220);
+            }
+        }
+    }
+
+}
+
+section {
+    text-inline: center;
+}
+
 .container {
     width: 375px;
     height: 100%;
@@ -70,4 +142,12 @@ a {
     height: 70%;
     display: block;
     border-top: 20px;
+}
+
+.footer {
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    padding-block: 202px;
+
+
 }
