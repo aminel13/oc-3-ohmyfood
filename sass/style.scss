@@ -6,6 +6,8 @@
 
 @import "./fonts";
 @import "./composants/boutton";
+@import "./composants/favoris";
+@import "./restaurant";
 
 h1 {
     text-align: center;
@@ -34,7 +36,7 @@ a {
     overflow: hidden;
     box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
     margin-bottom: 15px;
-
+    background-color: white;
 
     img {
         width: 100%;
@@ -76,6 +78,10 @@ a {
 
     ul {
         list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
     }
 
     li {
@@ -83,9 +89,8 @@ a {
         height: 75px;
         margin-block: 10px;
 
-        box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
+        box-shadow: 2px 3px 10px 3px rgb(121 121 121 / 25%);
         border-radius: 27px;
-        margin-bottom: 30px;
         background-color: rgb(247, 247, 247);
         padding-block: 27px;
 
@@ -96,7 +101,7 @@ a {
             height: 24px;
             border-radius: 50%;
             display: inline-block;
-            padding: 2px 7px;
+            padding: 3px 7px;
             margin-left: -12px;
         }
 
@@ -104,13 +109,14 @@ a {
             color: rgb(126, 126, 126);
             margin-inline: 25px;
             font-size: 20px;
-            transition: color 2s ease-in-out;
+            transition: color 0.3s ease-in-out;
         }
 
-        transition: background-color 2s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
             background-color: rgb(245, 237, 255);
+            box-shadow: 5px 5px 10px 7px rgb(121 121 121 / 25%);
 
             i {
                 color: rgb(147, 86, 220);
@@ -120,8 +126,20 @@ a {
 
 }
 
-section {
-    text-inline: center;
+.restaurants {
+    background-color: rgb(246, 246, 246);
+    padding: 60px 20px;
+
+    h2 {
+        margin-bottom: 25px;
+    }
+
+    .restaurants-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
 }
 
 .container {
@@ -144,10 +162,8 @@ section {
     border-top: 20px;
 }
 
-.footer {
+footer {
     background-color: rgb(53, 53, 53);
     color: rgb(255, 255, 255);
     padding-block: 202px;
-
-
 }

@@ -1,0 +1,35 @@
+header {
+    img {
+        height: 260px;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+.menu {
+    width: 100%;
+    border-top: 10px;
+    display: block;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+
+        li {
+            width: 330px;
+            height: 62px;
+            margin-block: 4px;
+
+            box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
+            border-radius: 20px;
+            margin-bottom: 15px;
+            background-color: rgb(247, 247, 247);
+            padding-block: 10px;
+        }
+    }
+
+
+}

@@ -36,14 +36,15 @@
                 <span class="numero">1</span> <i class="fa-solid fa-mobile-screen-button"></i> <span> Choisissez un
                     restaurant</span>
             </li>
-            <span></span>
-            <li><i class="fa-solid fa-list-ul"></i><span>Composez votre menu </span></li>
-            <li><i class="fa-sharp fa-solid fa-store"></i> <span> Degustez au restaurant</span></li>
+            <li><span class="numero">2</span> <i class="fa-solid fa-list-ul"></i><span>Composez votre menu </span></li>
+            <li><span class="numero">3</span> <i class="fa-sharp fa-solid fa-store"></i> <span> Degustez au
+                    restaurant</span></li>
         </ul>
     </div>
 
-    <section>
-        <div class="Restaurant">
+    <section class="restaurants">
+        <h2>Restaurants</h2>
+        <div class="restaurants-container">
             <a class="carte-restaurant" href="./pages/LaPaletteGouts.html">
                 <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gouts">
                 <div class="carte-content">
@@ -51,7 +52,11 @@
                         <h3>La palette du gouts</h3>
                         <p>Menilmontant</p>
                     </div>
-                    <i class="fa-regular fa-heart"></i>
+                    <div class="favoris">
+                        <i class="fa-regular fa-heart" aria-hidden="true"> </i>
+                        <i class="fa-solid fa-square-full" aria-hidden="true"></i>
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </div>
                 </div>
             </a>
 
@@ -90,7 +95,7 @@
     </section>
 
     <footer>
-        <img src="logo" alt="">
+        <h3>ohmyfood</h3>
         <div class="menu footer">
             <ul>
                 <li><i class="fa-solid fa-utensils"></i>

@@ -1,9 +1,19 @@
 .btn-principal {
     width: 220px;
     height: 50px;
-    background-color: rgb(209, 106, 219);
+    background: linear-gradient(170deg, rgb(236, 115, 218), rgb(164, 91, 219));
     color: white;
     border: none;
-    border-radius: 25px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 7px 13px -6px rgb(0 0 0 / 60%);
 
+    &:hover {
+        box-shadow: 7px 11px 13px -6px rgb(0 0 0 / 52%);
+        background: linear-gradient(170deg, rgb(247, 125, 229), rgb(185, 109, 243));
+    }
 }

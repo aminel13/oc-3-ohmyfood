@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+h1,
+footer h3 {
     font-family: 'Shrikhand', cursive;
+}
+
+footer h3 {
+    color: white;
 }

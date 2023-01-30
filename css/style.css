@@ -9,17 +9,102 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1,
+footer h3 {
   font-family: "Shrikhand", cursive;
+}
+
+footer h3 {
+  color: white;
 }
 
 .btn-principal {
   width: 220px;
   height: 50px;
-  background-color: rgb(209, 106, 219);
+  background: linear-gradient(170deg, rgb(236, 115, 218), rgb(164, 91, 219));
   color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 7px 13px -6px rgba(0, 0, 0, 0.6);
+}
+.btn-principal:hover {
+  box-shadow: 7px 11px 13px -6px rgba(0, 0, 0, 0.52);
+  background: linear-gradient(170deg, rgb(247, 125, 229), rgb(185, 109, 243));
+}
+
+.favoris {
+  position: relative;
+  width: 22px;
+  height: 22px;
+}
+.favoris i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+}
+.favoris .fa-regular.fa-heart {
+  z-index: 5;
+  color: black;
+  transition: opacity 1.5s ease-in-out;
+}
+.favoris .fa-square-full {
+  z-index: 3;
+  color: gray;
+}
+.favoris .fa-solid.fa-heart {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 1;
+  background-image: linear-gradient(#e66465, #9198e5);
+}
+.favoris .fa-square-full {
+  color: white;
+  height: 15px;
+  transition: top 2s;
+  transition-timing-function: ease-in-out;
+}
+.favoris:hover .fa-square-full {
+  top: -23px;
+}
+.favoris:hover .fa-regular.fa-heart {
+  opacity: 0;
+}
+
+header img {
+  height: 260px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  width: 100%;
+  border-top: 10px;
+  display: block;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+.menu ul li {
+  width: 330px;
+  height: 62px;
+  margin-block: 4px;
+  box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
+  border-radius: 20px;
+  margin-bottom: 15px;
+  background-color: rgb(247, 247, 247);
+  padding-block: 10px;
 }
 
 h1 {
@@ -50,6 +135,7 @@ a {
   overflow: hidden;
   box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
   margin-bottom: 15px;
+  background-color: white;
 }
 .carte-restaurant img {
   width: 100%;
@@ -86,17 +172,20 @@ a {
 }
 .fonctionnement ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
 }
 .fonctionnement li {
   width: 330px;
   height: 75px;
   margin-block: 10px;
-  box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
+  box-shadow: 2px 3px 10px 3px rgba(121, 121, 121, 0.25);
   border-radius: 27px;
-  margin-bottom: 30px;
   background-color: rgb(247, 247, 247);
   padding-block: 27px;
-  transition: background-color 2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .fonctionnement li .numero {
   background-color: rgb(147, 86, 220);
@@ -105,24 +194,35 @@ a {
   height: 24px;
   border-radius: 50%;
   display: inline-block;
-  padding: 2px 7px;
+  padding: 3px 7px;
   margin-left: -12px;
 }
 .fonctionnement li i {
   color: rgb(126, 126, 126);
   margin-inline: 25px;
   font-size: 20px;
-  transition: color 2s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 .fonctionnement li:hover {
   background-color: rgb(245, 237, 255);
+  box-shadow: 5px 5px 10px 7px rgba(121, 121, 121, 0.25);
 }
 .fonctionnement li:hover i {
   color: rgb(147, 86, 220);
 }
 
-section {
-  text-inline: center;
+.restaurants {
+  background-color: rgb(246, 246, 246);
+  padding: 60px 20px;
+}
+.restaurants h2 {
+  margin-bottom: 25px;
+}
+.restaurants .restaurants-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 .container {
@@ -142,7 +242,7 @@ section {
   border-top: 20px;
 }
 
-.footer {
+footer {
   background-color: rgb(53, 53, 53);
   color: rgb(255, 255, 255);
   padding-block: 202px;
