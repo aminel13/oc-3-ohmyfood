@@ -11,9 +11,16 @@
     text-align: center;
     transition: all 0.3s ease-in-out;
     box-shadow: 2px 7px 13px -6px rgb(0 0 0 / 60%);
+    display: block;
+    margin: auto;
 
     &:hover {
         box-shadow: 7px 11px 13px -6px rgb(0 0 0 / 52%);
         background: linear-gradient(170deg, rgb(247, 125, 229), rgb(185, 109, 243));
     }
+}
+
+.restaurant-page .btn-principal {
+    margin-top: 50px;
+    margin-bottom: 80px;
 }

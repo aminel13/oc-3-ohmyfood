@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,85 +14,318 @@
         Ohmyfood
     </h1>
     <div class="location">
-
-        <i class="fa-solid fa-location-dot"></i>
-        <span>Paris, Bellville</span>
-
+        <form>
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Paris, Bellville" name="Paris, Bellville">
+        </form>
     </div>
-    <div class="reservation">
+    <div class="Reservation">
         <h2>Resever le menu qui vous convient</h2>
         <p>Decouvrez des restaurants d'exception,</p>
         <p>selectionnes par nos soins</p>
-        <button class="btn-principal">Explorer nos réstaurant </button>
+        <button> <span>Explorer nos réstaurant</span></button>
     </div>
-
-    <div class="fonctionnement">
+    <div class="Fonctionnement">
         <h2>Fonctionnement</h2>
         <ul>
             <li>
-                <span class="numero">1</span> <i class="fa-solid fa-mobile-screen-button"></i> <span> Choisissez un
-                    restaurant</span>
+                <i class="fa-regular fa-mobile-screen-button"></i> <span> Choisissez un restaurant</span>
             </li>
-            <li><span class="numero">2</span> <i class="fa-solid fa-list-ul"></i><span>Composez votre menu </span></li>
-            <li><span class="numero">3</span> <i class="fa-sharp fa-solid fa-store"></i> <span> Degustez au
-                    restaurant</span></li>
+            <li><span>Composez votre menu </span></li>
+            <li><i class="fa-sharp fa-solid fa-store"></i> <span> Degustez au restaurant</span></li>
         </ul>
     </div>
 
-    <section class="restaurants">
-        <h2>Restaurants</h2>
-        <div class="restaurants-container">
-            <a class="carte-restaurant" href="./pages/LaPaletteGouts.html">
-                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du gouts">
-                <div class="carte-content">
-                    <div class="content-text">
-                        <h3>La palette du gouts</h3>
+    <section>
+        <div class="Restaurant">
+            <ul>
+                <li>
+                    <a href="#La palette du gouts">La palette des gouts</a>
+                    <img src="./" alt="">
+                    <div class="content">
+                        <h3>La palette du gouts </h3>
+                        <i class="fa-light fa-heart"></i>
                         <p>Menilmontant</p>
                     </div>
-                    <div class="favoris">
-                        <i class="fa-regular fa-heart" aria-hidden="true"> </i>
-                        <i class="fa-solid fa-square-full" aria-hidden="true"></i>
-                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                </li>
+
+                <li>
+                    <a href="#La note enchantee">La note enchantee</a>
+                    <img src="" alt="">
+                    <div class="content">
+                        <h3>La note enchantee </h3>
+                        <i class="fa-light fa-heart"></i>
+                        <p>Charonne</p>
                     </div>
-                </div>
-            </a>
+                </li>
 
+                <li>
+                    <a href="#A la française">A la française</a>
+                    <img src="" alt="">
+                    <div class="content">
+                        <h3>A la française</h3>
+                        <i class="fa-light fa-heart"></i>
+                        <p>Cité Rouge</p>
+                    </div>
+                </li>
 
-            <a class="carte-restaurant" href="#La note enchantee">
-                <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantee">
-                <div class="content">
-                    <h3>La note enchantee </h3>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Charonne</p>
-                </div>
-            </a>
-
-
-            <a class="carte-restaurant" href="#A la française">
-                <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
-                <div class="content">
-                    <h3>A la française</h3>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Cité Rouge</p>
-                </div>
-            </a>
-
-
-            <a class="carte-restaurant" href="#Le delice des sens">
-                <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    alt="Le delice des sens">
-                <div class="content">
-                    <h3>Le delice des sens</h3>
-                    <i class="fa-regular fa-heart"></i>
-                    <p>Folie-Méricourt</p>
-                </div>
-            </a>
+                <li>
+                    <a href="#Le delice des sens">Le delice des sens</a>
+                    <img src="" alt="">
+                    <div class="content">
+                        <h3>Le delice des sens</h3>
+                        <i class="fa-light fa-heart"></i>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                </li>
         </div>
         </ul>
     </section>
 
+
+    <main>
+
+        <section1>
+            <img src="./images/restaurants/" alt=" page de garde">
+            <div class="container">
+                <h1> La palette du goût</h1>
+                <i class="fa-thin fa-heart"></i>
+                <h2>ENTREES</h2>
+                <ul>
+                    <li>
+                        <h3>Fricassée d'escargot</h3>
+                        <p> Au piment d'Espelette <span>25E</span></p>
+                    </li>
+                    <li>
+                        <h3> Foie gras de canard mi-cuit</h3>
+                        <p> Et ses copeaux de truffe noire<span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3>Œuf au plat</h3>
+                        <p>Assaisonné à la truffe sur lit de caviar <span>20E</span></p>
+                    </li>
+                </ul>
+
+                <h2>PLATS</h2>
+                <ul>
+                    <li>
+                        <h3> Filet de boeuf aux herbes </h3>
+                        <p> Accompagné de sa ribambelle de légumes <span>40E</span></p>
+                    </li>
+                    <li>
+                        <h3> Parmentier de queue de boeuf</h3>
+                        <p> À la truffe noire sur sa purée de panais<span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3>Filet de turbot</h3>
+                        <p> Aux agrumes <span>44E</span></p>
+                    </li>
+                </ul>
+
+                <h2>DESSERTS</h2>
+                <ul>
+                    <li>
+                        <h3> Paris-Brest</h3>
+                        <p> Revisité<span>18E</span></p>
+                    </li>
+                    <li>
+                        <h3> Macaron au chocolat d'exception </h3>
+                        <p>Et glace à la vanille de Madagascar <span>22E</span></p>
+                    </li>
+                    <li>
+                        <h3> Mousse au chocolat </h3>
+                        <p> Au piment d'Espelette et à la truffe noire<span>23E</span></p>
+                    </li>
+
+                </ul>
+
+                <button> <span>commander</span></button>
+            </div>
+        </section1>
+
+        <section2>
+            <img src="./images/work" alt=" page de garde">
+            <div class="container">
+                <h1>La note enchantée </h1>
+                <i class="fa-thin fa-heart"></i>
+                <h2>ENTREES</h2>
+                <ul>
+                    <li>
+                        <h3> Ravioles de foie gras</h3>
+                        <p> Accompagnés de leur crème à la truffe <span>25E</span></p>
+                    </li>
+                    <li>
+                        <h3> Caviar osciètre </h3>
+                        <p>Sur blini à la farine de blé noir <span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3> Homard et espuma de potiron</h3>
+                        <p> Mariné aux zestes d'orange <span>20E</span></p>
+                    </li>
+                    <li>
+                        <h3> Foie gras de canard cuit entier </h3>
+                        <p> Confiture de figue et pain toasté <span>35E</span></p>
+                    </li>
+                </ul>
+
+                <h2>PLATS</h2>
+                <ul>
+                    <li>
+                        <h3> Noix de coquilles Saint-Jacques </h3>
+                        <p> Sur lit de purée de céleri-rave <span>40E</span></p>
+                    </li>
+                    <li>
+                        <h3>Langoustine poêlée </h3>
+                        <p>Purée de patate douce <span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3>Mijoté de queue de boeuf </h3>
+                        <p>Et riz sauvage aux zestes de citron <span>44E</span></p>
+                    </li>
+                </ul>
+
+                <h2>DESSERTS</h2>
+                <ul>
+                    <li>
+                        <h3> Macaron noisette et chocolat </h3>
+                        <p> Glace au caramel brun et sel de Guérande <span>18E</span></p>
+                    </li>
+                    <li>
+                        <h3> Baba au rhum revisité </h3>
+                        <p> Avec son coulis de citron<span>22E</span></p>
+                    </li>
+                    <li>
+                        <h3>Tarte au citron meringuée </h3>
+                        <p>Déstructurée <span>23E</span></p>
+                    </li>
+
+                </ul>
+
+                <button> <span>commander</span></button>
+            </div>
+        </section2>
+
+        <section3>
+            <img src="./images/work" alt=" page de garde">
+            <div class="container">
+                <h1> À la française</h1>
+                <i class="fa-thin fa-heart"></i>
+                <h2>ENTREES</h2>
+                <ul>
+                    <li>
+                        <h3>Tartare de poulpe acidulé </h3>
+                        <p> Aux zestes d'orange <span>25E</span></p>
+                    </li>
+                    <li>
+                        <h3> Velouté de légumes d'antan </h3>
+                        <p>Carotte, panais, topinambour <span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3> Soupe à l'oignon </h3>
+                        <p> Revisitée <span>20E</span></p>
+                    </li>
+                </ul>
+
+                <h2>PLATS</h2>
+                <ul>
+                    <li>
+                        <h3>Coquilles Saint-Jacques </h3>
+                        <p>Accompagnées d'une purée de panais <span>40E</span></p>
+                    </li>
+                    <li>
+                        <h3>Magret de canard </h3>
+                        <p>Et parmentier de pommes de terre <span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3>Pigeonneau d’Ille-et-Vilaine </h3>
+                        <p> Sur son lit de gnocchis aux légumes<span>44E</span></p>
+                    </li>
+                </ul>
+
+                <h2>DESSERTS</h2>
+                <ul>
+                    <li>
+                        <h3>Pétales de violettes glacés </h3>
+                        <p>Et purée de noisettes <span>18E</span></p>
+                    </li>
+                    <li>
+                        <h3> Fondant au chocolat </h3>
+                        <p> Revisité <span>22E</span></p>
+                    </li>
+                    <li>
+                        <h3> Millefeuille croustillant </h3>
+                        <p>Myrtilles et pâte d’amande <span>23E</span></p>
+                    </li>
+
+                </ul>
+
+                <button> <span>commander</span></button>
+            </div>
+        </section3>
+
+
+        <section4>
+            <img src="./images/work" alt=" page de garde">
+            <div class="container">
+                <h1>le delice des sens</h1>
+                <i class="fa-thin fa-heart"></i>
+                <h2>ENTREES</h2>
+                <ul>
+                    <li>
+                        <h3>Tartare de thon</h3>
+                        <p>Assaisonné au yuzu <span>25E</span></p>
+                    </li>
+                    <li>
+                        <h3>Bouchée de homard croustillant</h3>
+                        <p>Et sa farandole de petits légumes <span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3>Velouté de cèpes </h3>
+                        <p>Aux truffes <span>20E</span></p>
+                    </li>
+                </ul>
+
+                <h2>PLATS</h2>
+                <ul>
+                    <li>
+                        <h3>Poulet rôti aux herbes de Provence </h3>
+                        <p>Et sa crème de truffe <span>40E</span></p>
+                    </li>
+                    <li>
+                        <h3>Langouste rôtie </h3>
+                        <p>Et ses légumes de saison <span>35E</span></p>
+                    </li>
+                    <li>
+                        <h3>Côte de boeuf Angus</h3>
+                        <p>Et sa purée de panais <span>44E</span></p>
+                    </li>
+                </ul>
+
+                <h2>DESSERTS</h2>
+                <ul>
+                    <li>
+                        <h3>Farandole de desserts</h3>
+                        <p>Du chef <span>18E</span></p>
+                    </li>
+                    <li>
+                        <h3>Crème brulée </h3>
+                        <p>Revisitée <span>22E</span></p>
+                    </li>
+                    <li>
+                        <h3>Tiramisu </h3>
+                        <p>À la noisette <span>23E</span></p>
+                    </li>
+
+                </ul>
+
+                <button> <span>commander</span></button>
+            </div>
+        </section4>
+        </div>
+    </main>
+
     <footer>
-        <h3>ohmyfood</h3>
+        <img src="logo" alt="">
         <div class="menu footer">
             <ul>
                 <li><i class="fa-solid fa-utensils"></i>

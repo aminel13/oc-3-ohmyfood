@@ -1,35 +1,47 @@
 header {
     img {
         height: 260px;
-        width: auto;
+        width: 100%;
         object-fit: cover;
+        z-index: -1;
+        position: relative;
     }
+
+    position: relative;
+    z-index: -1;
 }
 
-.menu {
-    width: 100%;
-    border-top: 10px;
-    display: block;
+.restaurant-page {
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    transform: translateY(-30px);
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+
+    h2 {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    h2::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 3px;
+        background: $couleur-tertiaire;
+        top: 32px;
+        position: absolute;
+    }
 
     ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 30px;
-
-        li {
-            width: 330px;
-            height: 62px;
-            margin-block: 4px;
-
-            box-shadow: 5px 5px 15px 5px rgba(121, 121, 121, 0.44);
-            border-radius: 20px;
-            margin-bottom: 15px;
-            background-color: rgb(247, 247, 247);
-            padding-block: 10px;
-        }
+        gap: 20px;
     }
-
-
 }

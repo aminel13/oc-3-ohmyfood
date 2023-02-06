@@ -1,0 +1,81 @@
+.carte-menu {
+    height: 70px;
+    width: 350px;
+    box-shadow: 2px 3px 10px 3px rgb(121 121 121 / 25%);
+    border-radius: 15px;
+    padding: 17px 12px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-right: 0;
+    cursor: pointer;
+
+    .carte-menu-content {
+        width: 350px;
+        padding-right: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        transition: width 0.5s ease-in-out;
+
+        .detail {
+            width: 350px;
+
+            h3,
+            p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            h3 {
+                margin-bottom: 12px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+
+    .paneau {
+        display: grid;
+        place-content: center; //pour centre l'icone de la coche
+        height: 70px;
+        background-color: #4edd95;
+        color: white;
+        width: 0;
+        transition: width 0.5s ease-in-out;
+
+        i {
+            //la coche
+            transform: rotate(180deg); //initialement inverssée
+            transition: transform 0.5s ease-in-out;
+            transition-delay: 0.3s;
+        }
+
+    }
+
+    &:hover {
+        .carte-menu-content {
+            width: 280px;
+
+            .detail {
+                width: 280px;
+            }
+        }
+
+        .paneau {
+            width: 70px;
+
+            i {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+}
