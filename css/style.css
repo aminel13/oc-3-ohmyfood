@@ -21,13 +21,11 @@ footer h3 {
 header {
   position: relative;
 }
-
 header nav {
   padding: 10px 20px;
   display: flex;
   align-items: center;
 }
-
 header nav a {
   display: block;
   width: 50px;
@@ -36,19 +34,17 @@ header nav a {
   cursor: pointer;
   font-size: 25px;
 }
-
 header nav h1 {
   width: calc(100% - 50px);
 }
-
 header img {
   height: 260px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
   position: relative;
 }
-
 header .carte-content {
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -63,7 +59,6 @@ header .carte-content {
   position: relative;
   z-index: 2;
 }
-
 .restaurant-page h2 {
   position: relative;
   margin-top: 40px;
@@ -71,7 +66,6 @@ header .carte-content {
   font-weight: 400;
   font-size: 18px;
 }
-
 .restaurant-page h2::after {
   content: "";
   display: block;
@@ -81,7 +75,6 @@ header .carte-content {
   top: 32px;
   position: absolute;
 }
-
 .restaurant-page ul {
   list-style: none;
   display: flex;
@@ -119,36 +112,30 @@ header .carte-content {
   0% {
     transform: rotate(0deg);
   }
-
   50% {
     transform: rotate(90deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 @keyframes disparaitre {
   0% {
     opacity: 1;
     height: 100vh;
     z-index: 999;
   }
-
   75% {
     opacity: 0;
     height: 100vh;
     z-index: -1;
   }
-
   100% {
     opacity: 0;
     height: 0;
     z-index: -1;
   }
 }
-
 .btn-principal {
   width: 220px;
   height: 50px;
@@ -165,7 +152,6 @@ header .carte-content {
   display: block;
   margin: auto;
 }
-
 .btn-principal:hover {
   box-shadow: 7px 11px 13px -6px rgba(0, 0, 0, 0.52);
   background: linear-gradient(170deg, rgb(247, 125, 229), rgb(185, 109, 243));
@@ -186,43 +172,37 @@ header .carte-content {
   width: 22px;
   height: 22px;
 }
-
 .favoris i {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 22px;
 }
-
 .favoris .fa-regular.fa-heart {
   z-index: 5;
   color: black;
   transition: opacity 1.5s ease-in-out;
 }
-
 .favoris .fa-square-full {
   z-index: 3;
   color: gray;
 }
-
 .favoris .fa-solid.fa-heart {
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   z-index: 1;
   background-image: linear-gradient(#e66465, #9198e5);
 }
-
 .favoris .fa-square-full {
   color: white;
   height: 15px;
   transition: top 2s;
   transition-timing-function: ease-in-out;
 }
-
 .favoris:hover .fa-square-full {
   top: -23px;
 }
-
 .favoris:hover .fa-regular.fa-heart {
   opacity: 0;
 }
@@ -241,7 +221,6 @@ header .carte-content {
   padding-right: 0;
   cursor: pointer;
 }
-
 .carte-menu .carte-menu-content {
   width: 340px;
   padding-right: 25px;
@@ -250,26 +229,21 @@ header .carte-content {
   align-items: end;
   transition: width 0.5s ease-in-out;
 }
-
 .carte-menu .carte-menu-content .detail {
   width: 340px;
 }
-
 .carte-menu .carte-menu-content .detail h3,
 .carte-menu .carte-menu-content .detail p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .carte-menu .carte-menu-content .detail h3 {
   margin-bottom: 12px;
 }
-
 .carte-menu .carte-menu-content .detail p {
   font-size: 14px;
 }
-
 .carte-menu .paneau {
   display: grid;
   place-content: center;
@@ -279,25 +253,20 @@ header .carte-content {
   width: 0;
   transition: width 0.5s ease-in-out;
 }
-
 .carte-menu .paneau i {
   transform: rotate(180deg);
   transition: transform 0.5s ease-in-out;
   transition-delay: 0.3s;
 }
-
 .carte-menu:hover .carte-menu-content {
   width: 280px;
 }
-
 .carte-menu:hover .carte-menu-content .detail {
   width: 245px;
 }
-
 .carte-menu:hover .paneau {
   width: 70px;
 }
-
 .carte-menu:hover .paneau i {
   transform: rotate(360deg);
 }
@@ -308,19 +277,16 @@ footer {
   padding-block: 25px;
   text-align: left;
 }
-
 footer h3 {
   margin-bottom: 25px;
   margin-left: 25px;
 }
-
 footer .menu-footer {
   width: 100%;
   border-top: 10px;
   display: block;
   padding-left: 15px;
 }
-
 footer .menu-footer ul {
   list-style: none;
   display: flex;
@@ -328,21 +294,17 @@ footer .menu-footer ul {
   justify-content: space-around;
   gap: 10px;
 }
-
 footer .menu-footer ul li {
   min-width: 325px;
   transition: padding-left 0.3s ease-in-out;
 }
-
 footer .menu-footer ul li i {
   width: 25px;
   text-align: left;
 }
-
 footer .menu-footer ul li a {
   display: inline;
 }
-
 footer .menu-footer ul li:hover {
   font-weight: 600;
   padding-left: 5px;
@@ -354,25 +316,20 @@ footer .menu-footer ul li:hover {
   animation-fill-mode: forwards;
   top: 15px;
 }
-
 .restaurant-page ul li:nth-child(1) {
   animation-delay: 0s;
 }
-
 .restaurant-page ul li:nth-child(2) {
   animation-delay: 0.5s;
 }
-
 .restaurant-page ul li:nth-child(3) {
   animation-delay: 1.5s;
 }
-
 @keyframes apparition {
   from {
     opacity: 0;
     top: 25px;
   }
-
   to {
     opacity: 1;
     top: 0px;
@@ -390,7 +347,8 @@ button {
 img {
   display: block;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -409,12 +367,10 @@ a {
   background-color: white;
   position: relative;
 }
-
 .carte-restaurant img {
   width: 100%;
   height: 175px;
 }
-
 .carte-restaurant .nouveau {
   height: 30px;
   width: 80px;
@@ -433,7 +389,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
 .carte-content h3 {
   margin-bottom: 3px;
 }
@@ -450,7 +405,6 @@ a {
   background-color: rgb(247, 247, 247);
   padding-block: 45px;
 }
-
 .reservation h2 {
   margin-bottom: 10px;
 }
@@ -458,7 +412,6 @@ a {
 .fonctionnement {
   padding: 20px;
 }
-
 .fonctionnement ul {
   list-style: none;
   display: flex;
@@ -466,7 +419,6 @@ a {
   justify-content: space-around;
   gap: 30px;
 }
-
 .fonctionnement li {
   width: 330px;
   height: 75px;
@@ -477,7 +429,6 @@ a {
   padding-block: 27px;
   transition: all 0.3s ease-in-out;
 }
-
 .fonctionnement li .numero {
   background-color: rgb(147, 86, 220);
   color: white;
@@ -488,19 +439,16 @@ a {
   padding: 3px 7px;
   margin-left: -12px;
 }
-
 .fonctionnement li i {
   color: rgb(126, 126, 126);
   margin-inline: 25px;
   font-size: 20px;
   transition: color 0.3s ease-in-out;
 }
-
 .fonctionnement li:hover {
   background-color: rgb(245, 237, 255);
   box-shadow: 5px 5px 10px 7px rgba(121, 121, 121, 0.25);
 }
-
 .fonctionnement li:hover i {
   color: rgb(147, 86, 220);
 }
@@ -509,11 +457,9 @@ a {
   background-color: rgb(246, 246, 246);
   padding: 60px 20px;
 }
-
 .restaurants h2 {
   margin-bottom: 25px;
 }
-
 .restaurants .restaurants-container {
   display: flex;
   flex-wrap: wrap;
@@ -526,7 +472,6 @@ a {
   height: 100%;
   border-bottom: 20px;
 }
-
 .container img {
   width: 100%;
   height: 220px;
@@ -537,6 +482,4 @@ a {
   height: 70%;
   display: block;
   border-top: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
